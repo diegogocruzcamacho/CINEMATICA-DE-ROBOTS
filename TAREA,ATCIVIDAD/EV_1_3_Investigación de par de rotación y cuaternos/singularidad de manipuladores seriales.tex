@@ -1,0 +1,85 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Diego Cruz Camacho}
+\begin{document}
+\begin{center}
+\includegraphics[scale=1]{logo.jpg}\\ 
+Nombre: Diego cruz camacho\\
+Materia: Cinematica de robots\\
+Carrera: Ing. Mecatrrónica\\
+Grado y Grupo: 7mo B\\
+Actividad: Singularidad de manipuladores seriales\\
+\includegraphics[scale=1]{descarga.png} 
+\end{center}
+\pagebreak
+\section{INTRODUCCIÓN}
+Un índice de desempeño de un robot es una cantidad escalar
+que permite evaluar el funcionamiento de un robot a partir de un
+criterio definido. Los índices de desempeño son importantes instrumentos para la planificación de movimientos y el diseño de
+robots manipuladores. En la planificación de movimientos un
+índice de desempeño ayuda a optimizar el funcionamiento del
+robot (en este caso se habla de índices dependientes de la postura).
+\\
+En la etapa de diseño, un índice de desempeño permite
+orientar el proceso de cálculo de los parámetros geométricos e
+inerciales que definen la arquitectura del robot (en este caso se
+requiere de índices independientes de la postura).
+Se han propuesto varios índices de desempeño en las ultimas décadas. El interés por estos índices se genero a partir
+de la década de los ochenta, debido a la necesidad de criterios o herramientas para evaluar el diseño de robots manipuladores, una tarea que hasta entonces dependía de la experiencia de los diseñadores y el uso de herramientas CAD (Asada,
+1983), (Yoshikawa, 1985b). Este interés por los índices de desempeño ha continuado en las décadas posteriores, en las cuales
+diversos autores han propuesto criterios que permiten evaluar la
+capacidad del robot para realizar tareas de manipulación desde
+una perspectiva global, hasta otros que permiten evaluar algún
+aspecto en particular de la tarea de interés.
+\\
+En este trabajo se hace una revisión de algunos de los índices
+de desempeño mas referenciados o que mayor interés han generado. Se presenta la definición de una colección de índices
+de cuatro tipos diferentes: índices de desempeño cinetostático,
+índices de desempeño dinámico, índices de límites articulares, y
+finalmente índices definidos sobre el espacio de trabajo.
+\\
+Además, se hace referencia a la manera en que se han utilizado en diferentes aplicaciones.
+Varios de los índices de desempeño están definidos en función de la matriz.
+\\
+Los índices de desempeño son importantes herramientas para la planificación de movimientos y el diseño de robots manipuladores. 
+\\
+En este trabajo se presenta una colección de algunos de los índices de desempeño que mayor interés han generado en
+la comunidad dedicada a la robótica. Se presentan índices de desempeño cinetostático, dinámico, de límites articulares, e índices
+definidos sobre el espacio de trabajo. 
+\\
+Además, se realiza una revisión sobre las estrategias que se han propuesto para solventar los
+problemas que aparecen cuando las unidades de los elementos de la matriz Jacobiana no son homogéneas.
+\\
+Al final de este trabajo,
+proponemos una serie índices de desempeño globales que pueden resultar útiles en el diseño de robots manipuladores. 
+\pagebreak
+\section{.- MANIPULADORES SERIALES}
+Los robots manipuladores seriales son herramientas eficaces para realizar tareas repetitivas y de precisión en la industria, siempre que se comprenda la cinemática involucrada en el posicionamiento y orientación del efector final. 
+\\
+Esta información presenta una metodología para resolver el problema cinemático inverso de un robot serial (Melfa RV-2A) utilizando un algoritmo genético (AG) a partir del modelo cinemático directo Screws (MCDS). Para esto, se obtienen los parámetros Screw que modelan el robot, se calcula el espacio de trabajo asociado y se diseña el AG contemplando una función multi-objetivo de alcance de posición y orientación en que se sitúa el efector final, con respecto a una coordenada y orientación de un punto objetivo establecido. 
+\\
+La validación del AG se realiza según la aptitud, el tiempo de convergencia y la cantidad de generaciones usadas por la función para alcanzar el objetivo. Por tanto, la implementación de un AG basado en un MCDS es una herramienta que podría utilizarse para calcular la cinemática inversa de robots seriales. 
+\\
+Esta implementación permite establecer por primera vez la exposición matricial de un sistema cinemático directo para obtener la solución cinemática inversa de un robot serial. 
+\\
+En consecuencia, se demuestra que esta es una metodología factible y eficiente para solucionar la cinemática inversa de cualquier tipo de robot manipulador.
+\\
+\includegraphics[scale=1]{angel.jpg}  
+\newpage
+\section{.- Modelamiento cinemático directo screw (mcds) y espacio de trabajo}
+Los fabricantes de robots industriales proveen en sus catálogos las dimensiones y características necesarias para su modelado cinemático o, en su defecto, estas pueden obtenerse a través de medición directa sobre el robot.
+\\
+Si se requiere un grado importante de precisión en los parámetros cinemáticos, estos pueden estimarse mediante técnicas de calibración de robots, tema suficientemente abordado por Gonzálvez y Iglesias, 2002, y Jamshidi, S., Krohling, y Fleming, 2005, entre otros. En el caso que nos ocupa, a partir de las dimensiones del robot dadas por el fabricante, se modela una estructura a escala que representa las distancias entre las diferentes articulaciones. 
+\\
+De este modo, se igualan los valores asociados a las dimensiones, rangos de operación y las cuatro articulaciones rotativas, que permiten alcanzar las coordenadas objetivo de acuerdo con el área de trabajo del robot (figura 1b) para los cuatro eslabones que deben cumplir con la tarea principal establecida (posicionarse y orientarse en una coordenada establecida). 
+\\
+En consecuencia, los parámetros obtenidos del modelo del robot permiten representarlo matemáticamente mediante matrices homogéneas
+\\
+\includegraphics[scale=1]{descarga3.jpg} 
+\end{document}
