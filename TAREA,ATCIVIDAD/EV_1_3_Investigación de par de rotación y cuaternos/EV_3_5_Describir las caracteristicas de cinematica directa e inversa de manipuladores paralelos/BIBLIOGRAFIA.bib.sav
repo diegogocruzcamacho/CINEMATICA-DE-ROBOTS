@@ -1,0 +1,22 @@
+% Encoding: UTF-8
+
+@InProceedings{Vitek2009,
+  author        = {Vitek, Jan},
+  title         = {Of Scripts and Programs: Tall Tales, Urban Legends, and Future Prospects},
+  booktitle     = {Proceedings of the 5th Symposium on Dynamic Languages},
+  year          = {2009},
+  series        = {DLS '09},
+  pages         = {1--2},
+  address       = {New York, NY, USA},
+  publisher     = {ACM},
+  __markedentry = {[diego:6]},
+  acmid         = {1640136},
+  doi           = {10.1145/1640134.1640136},
+  isbn          = {978-1-60558-769-1},
+  keywords      = {scripting},
+  location      = {Orlando, Florida, USA},
+  numpages      = {2},
+  url           = {http://doi.acm.org/10.1145/1640134.1640136},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
