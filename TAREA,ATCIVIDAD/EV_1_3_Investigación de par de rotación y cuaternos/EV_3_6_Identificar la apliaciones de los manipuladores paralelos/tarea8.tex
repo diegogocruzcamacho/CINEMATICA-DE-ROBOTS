@@ -1,0 +1,371 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Diego Cruz Camacho}
+\title{Identificar las aplicaciones de los manipuladores paralelos}
+\begin{document}
+\begin{center}
+\includegraphics[scale=1]{logo.jpg} 
+
+Nombre: Cruz Camacho Diego
+
+Materia: Cinematica de Robtos
+
+Carrera: Ing. Mecatrónica
+
+Docente: Ing. Carlos Enrique Moran Garabito
+
+Grado y Grupo: 7mo B\\ 
+\end{center}
+\pagebreak
+\section{INTRODUCCIÓN}
+
+La principal ventaja de los robots paralelos viene dada por la capacidad de distribuir las cargas
+aplicadas sobre el elemento terminal entre las piernas o cadenas cinemáticas abiertas que unen la
+plataforma móvil a la plataforma base. Es así como las cadenas cinemáticas o piernas le
+proporcionan una mayor rigidez al robot. Sin embargo, las piernas limitan su espacio de trabajo por las
+restricciones que introducen la configuración de cadena cerrada. Esto se explica haciendo un símil con el
+cuerpo humano, tal como lo presentan en, una cadena cinemática abierta (robot serial) puede ser
+vista como un solo brazo con el que se pueden realizar diversas tareas. Sin embargo, si se requiere de
+mayor fuerza o de precisión el ser humano emplea los dos brazos. Cuando se utilizan los dos
+brazos para manipular una pieza se está usando el concepto de robot paralelo teniendo en cuenta que la
+base fija es el torso y la plataforma móvil equivale al elemento sujetado con ambas manos.
+Siguiendo este símil, se puede observar que con los dos brazos se gana mayor capacidad de carga,
+mayor precisión pero a expensas de perder espacio de trabajo.
+A pesar de la desventaja de poco espacio de trabajo. Sus ventajas comparativas con respecto a los
+robots seriales hacen que desde su aparición a mediados de los 50, cada día se desarrollen más
+aplicaciones en el sector industrial y en nuevos campos como la robótica de servicios. En este sentido,
+este capítulo presenta una revisión de las aplicaciones prácticas y potenciales de los robots paralelos. De
+la revisión realizada se destacan 4 áreas principales, las dos primeras dentro del sector de la robótica
+industrial: 1) operaciones de pick and place y 2) centros de mecanizados para altas velocidades. Las
+otras áreas de interés radican en la robótica de servicio: 3) la cirugía robótica y 4) el desarrollo de
+dispositivos de rehabilitación y diagnosis.
+Antes de abordar las aplicaciones, primero se comienza revisando las aplicaciones iniciales de los
+robots paralelos. Seguidamente, se describen su empleo en aplicaciones pick and place (recogida y
+descarga) desde el robot precursor en el campo como lo es el robot Delta, hasta el robot Quattro -
+posiblemente el robot más rápido en la actualidad- que se destaca por tener un diseño de 4 GdL con 4
+piernas, donde cada una de las piernas presenta un sistema de paralelogramo. Además, el robot presenta 
+la característica de un diseño innovador de la plataforma móvil por medio de un plato articulado.
+Como segundo punto, se revisan los centros de mecanizados cuyo concepto de diseño se basan en
+robots paralelos. Se agrupan los robots comerciales de mayor impacto hasta la fecha a través de dos
+categorías. La primera categoría presentan robots basados en la configuración de plataforma Stewart y
+por tanto de 6 GdL. La segunda categoría incluye a los robots híbridos. Se destaca que una de las
+ventajas comparativas del robot paralelo con respecto a los robots seriales es en el mecanizado a altas
+velocidades de materiales de elevada dureza como los utilizados para la fabricación de herramientas y
+matrices de extrusión. Posteriormente, se presenta una revisión sobre robot paralelos en el campo
+medico en donde prácticamente no hay dispositivos del tipo comercial, más si dispositivos desarrollados
+a nivel de laboratorio. La última parte del capítulo se dedica al estudio de robots para rehabilitación y
+diagnosis.
+Para cada campo de aplicación se presentan las respectivas referencias no solo de artículos de
+investigación, sino que también sobre las patentes más relevantes. La información contenida en este
+capítulo se organiza a los fines de orientar y dar luces a diseñadores en la etapa conceptual de un
+proyecto de diseño que consideren utilizar un robot paralelo. Adicionalmente, se refieren documentos
+donde el lector interesado puede profundizar sobre el contenido presentado, por lo que un aporte del
+trabajo es pensado para orientar la fase inicial de la revisión bibliográfica de trabajos y tesis orientados
+al desarrollo de robot paralelos.
+Finaliza el capítulo con la descripción de robot paralelos desarrollados conjuntamente por equipos
+de investigación de la Universitat Politècnica de València y de la Universidad de los Andes, Venezuela.
+Se presentan trabajos que se enfocan al desarrollo de robots de rehabilitación y diagnosis de
+extremidades inferiores.\\
+
+\section{APLICACIONES INICIALES}
+
+
+Un robot paralelo consiste de una plataforma móvil unida a una plataforma fija mediante una serie
+de cadenas cinemáticas llamadas piernas. Partiendo del anterior concepto, Bonev establece que el
+origen del robot paralelo se encuentra en la industria del entretenimiento, siendo James E. Gwinnett en
+el año 1928 uno de los pioneros en patentar un artefacto basado en el concepto de robot paralelo. La
+Figura 1 presenta un esquema incluido en el documento de la patente original. El dispositivo 
+presenta una arquitectura donde una cadena cinemática o pierna central restringe el movimiento de la
+plataforma móvil respecto a la base de forma tal que su movimiento resultante es del tipo esférico. Una
+cadena cinemática ubicada en uno de los extremos de las plataformas, provee el movimiento de rotación
+a la plataforma móvil que es aprovechado para producir el movimiento requerido para el entretenimiento
+de los usuarios.
+\includegraphics[scale=1]{PRINCIPALES APLICACIONES.PNG} 
+
+
+
+
+
+
+La primera aplicación industrial conocida del robot paralelo, siguiendo la cronología propuesta por
+Bonev, fue presentada por Willard L.V. Pollard en el año 1940. El dispositivo fue propuesto para
+pintar vehículos de forma automática con pintura de aerosol y posteriormente fue patentado como
+dispositivo para controlar el posicionamiento de una herramienta. La Figura 2 muestra una
+representación esquemática del ingenioso aparato de 5 grados de libertad (GdL) donde la plataforma
+móvil va unida a la fija mediante 3 cadenas cinemáticas o piernas. El diseño presenta tres motores que
+determinan la posición de la cabeza de la herramienta, y otros dos motores que mediante un sistema de
+cables transmite el movimiento que permite orientar la herramienta.
+
+\includegraphics[scale=1]{PRINCIPALES APLICACIONES2.PNG} 
+
+Más tarde en la década de los 50, Eric Gough un ingeniero automotriz trabajando en la fábrica de
+neumáticos de la Ford Dunlop en Birmingham, Inglaterra, desarrolla una máquina Universal de pruebas
+de neumáticos. La plataforma fue puesta en funcionamiento en el año 1954 y cumplía la función de
+probar mecánicamente neumáticos mediante la aplicación de cargas combinadas. La Figura 3 muestra
+una imagen del dispositivo utilizado por la empresa Dunlop hasta el cierre de la fábrica en el año 1980.
+Actualmente el dispositivo se ubica en el Museo de Ciencia de Londres, específicamente en el almacén
+Wroughton. Su diseño presenta una forma de octaedro donde cada cadena cinemática es impulsada por
+actuadores lineales. El mecanismo presenta 6 GdL.
+No fue sino hasta 1965 que aparece la primera publicación científica referida a un robot paralelo.
+Stewart [8] introduce un robot paralelo de 6 GdL similar al de Gough. Debido al parecido que presenta
+la plataforma Stewart con el robot propuesto por Gough hoy en día la configuración del tipo hexápodo
+con actuadores lineales se conoce como plataforma Gough-Stewart. Es de destacar que la plataforma
+Stewart fue propuesta para aplicaciones de simulador de vuelo. La Figura 4 muestra el robot basado en
+el concepto de Stewart desarrollado para un simulador de vuelo de Lufthansa. Es justo también indicar
+que Klaus Cappel en 1964 de forma separada, y sin tener conocimiento previo de los trabajos de Gough
+y de Stewart, patenta una configuración similar al robot hexápodo como dispositivo para simulación de
+movimiento.
+
+
+
+
+
+
+
+
+Los robots anteriores representan las aplicaciones iniciales de los robot paralelos, pero no es hasta
+el año 1987 que los robot paralelos vuelven a tener un auge en la comunidad científica y de desarrollo de
+aplicaciones (Merlet, 2000). En el siguiente apartado se presentan diversos robots agrupados por campos
+de aplicación.\\
+
+
+
+
+
+
+
+
+
+\section{APLICACIONES DE PICK AND PLACE (RECOGER Y COLOCAR)}
+
+Luego de la introducción de la configuración de robot paralelo para desarrollar simuladores de 
+vuelo, la aplicación más conocida y desarrollada de estos robot es en operaciones de pick and place. Es
+de destacar que el robot serial equivalente para este tipo de operaciones lo constituye el robot SCARA
+(Selective Compliant Assembly Robot Arms) que presenta 4 GdL. Un robot SCARA permite posicionar
+el elemento terminal, y por ende la pieza, en el espacio cartesiano, además también puede realizar una
+rotación. A este tipo de movimiento se le conoce como movimiento de Schoenflies. El primer robot
+comercial y posiblemente uno de los más exitosos en implementación industrial lo constituye el robot
+Delta desarrollado a partir de la década de los 80 en la École Polytechnique Fédérale de Lausanne (Suiza)
+por Reymond Clavel . El robot fue desarrollado partiendo de la idea de desarrollar un robot para
+manipular objetos de bajo peso a altas velocidades. La particularidad del robot Delta es que la
+plataforma móvil va unida a la base mediante 3 piernas donde cada pierna presenta un mecanismo de
+paralelogramo que permite balancear el centro de masa de cada una de ellas. La piernas se unen a la base
+fija mediante pares o juntas universales (U). La Figura 5 muestra la representación esquemática del
+robot Delta donde el movimiento de las piernas externas aporta 3 GdL que permiten posicionar la
+plataforma móvil en el espacio. Generalmente la plataforma superior va fija a la bancada, mientras que
+la plataforma inferior es la móvil donde va ubicado la herramienta.
+El diseño de este robot incluye una pierna central del tipo cardan con el objeto de proveer el
+movimiento de rotación desde un motor ubicado en la base hasta la plataforma móvil. De esta forma el
+robot presenta los 4 GdL similares al robot SCARA. Lo novedoso de este diseño a diferencia del robot
+serial equivalente, es que emplea los actuadores en la base por lo que las barras en movimiento requieren
+de menos masa e inercia para soportar las cargas. El robot puede lograr aceleraciones de 50G en
+entornos experimentales y para aplicaciones industriales de 12 G. En general, el robot es diseñado para
+transportar objetos de bajo peso (de 10 gr a 1 Kg), por lo que lo hace un excelente candidato en la
+industria de ensamblado de componentes electrónicos. En el año 1999 ABB Flexible Automation
+comienza a fabricar y comercializar el robot Delta bajo el nombre de FlexPicker. En el año 2009 la
+compañía FANUC adquiere la licencia del robot y lo comienza a desarrollar para manipular objetos de
+mayor tamaño y peso. Las aplicaciones principales de este tipo de robot se encuentran en la industria del
+embalaje, en la industria farmacéutica e incluso para aplicaciones médicas de cirugía.\\ 
+
+
+\includegraphics[scale=1]{PICK AND PLACE.PNG} 
+
+
+
+
+
+
+Existen otros desarrollos de robot paralelos para aplicaciones del tipo SCARA pero estos no han
+alcanzado su aplicación comercial y se mantienen a nivel de desarrollo de laboratorios de investigación
+o universidades, entre ellos el lector interesado.
+Uno de los inconvenientes del robot tipo Delta es la necesidad de una pierna central para
+introducir el movimiento de rotación. La pierna central al ser del tipo cardan limita la vida útil ya que
+debe soporta grandes momentos de torsión, lo que hace que para altas velocidades se tenga que
+reemplazar constantemente. Inspirados una la configuración de 4 piernas externas Pierrot y col. presenta
+un robot con movimiento tipo SCARA que no requiere de una pierna central. La innovación del
+robot fue introducir el concepto de una plataforma articulada para añadir el grado de rotación a partir del
+movimiento de las 4 piernas ubicadas de forma externa (sin pierna central). Los diseños tradicionales se
+basan en una plataforma móvil rígida unida a las piernas. En este nuevo concepto las piernas van unidas
+a la extremos de la plataforma móvil que a su vez van unidas a un plato (que sirve como elemento
+terminal) mediante juntas cinemáticas, es decir, la plataforma es un conjunto de varias barras articuladas.
+El desarrollo de este tipo de robot ha pasado por varias etapas. Se inició con desarrollo de robot de la
+serie H4, donde H es un indicativo de la forma que presenta la plataforma móvil hasta su versión
+más actual el robot Par4 [19]. La Figura 6 muestra una representación esquemática del robot Par4 junto 
+con un detalle del plato articulado que sirve como plataforma móvil.\\
+
+
+
+
+
+
+
+El robot es un ejemplo de éxito de una innovación generada en ámbitos académicos y que luego ha
+llegado a su implementación en la industria . En el año 2007, la empresa Adept se hace con la
+patente del robot y lo comercializa bajo el nombre de Quattro. Dicho robot es posiblemente en la
+actualidad el robot más rápido en el mercado industrial. La Figura 7 presenta una versión del robot
+comercializado por la empresa Adept.
+Las principales aplicaciones de los robot antes descritos se encuentran en Industrias de
+empaquetado como la de alimentos, para el manejo de células fotovoltaicas, manejo de instrumentos
+médicos, corte laser a alta velocidad, así como también mecanizado de piezas de madera. También han
+sido empleados para la manejo de verduras, para mayor detalle se refiere al lector a la referencia.
+Para el año 2013, los robots pick and place basados en la configuración tipo delta o variantes
+representaban el 1% de los robots instalados, siendo dentro del segmento de robots paralelos el de
+mayor número de robot instalados en aplicaciones industriales.\\
+
+
+
+
+
+\section{APLICACIONES EN CENTRO DE MECANIZADO}
+
+Otra de las aplicaciones prácticas de los robots paralelos se encuentra en el área de desarrollo de
+centros de mecanizado. En este campo es común que los desarrolladores se refieran al robot paralelo
+como Mecanismo Cinemático Paralelo (MCP) en inglés Parallel Kinematic Mechanism (PKM). El
+primer prototipo de centro de mecanizado basado en la en MCP fue presentado al público en el evento
+International Manufacturing Technology Show (IMTS) de 1994 en Chicago, USA. El dispositivo utiliza
+un robot paralelo del tipo plataforma Stewart (6GdL) para realizar operaciones de mecanizado en 5 ejes.
+A partir su introducción en 1994 el número de desarrollo y patentes de centros de mecanizados basados
+en MCP ha incrementado constantemente. Seguidamente describimos aquellos robots que realmente han
+tenido aplicación en el sector industrial y que han superado la etapa de investigación y prototipado. Una
+lista extensa de los robots propuestos prototipos académicos o industriales se puede consultar en.
+El dispositivos presentado en el evento IMTS dio origen al centro de mecanizado comercial
+Giddings and Lewis' Variax Hexacenter. La base del dispositivo es una máquina del tipo hexápodo
+(6 GdL) con un diseño particular donde las piernas que unen la plataforma móvil a la fija se cruzan. La
+Figura 8 muestra una imagen del robot Variax, en ella se puede observar como la plataforma móvil va
+unida a la fija por medio de 6 piernas donde agrupadas en pares, sus piernas se cruzan.\\
+
+
+\includegraphics[scale=1]{MECANISADO.PNG} 
+
+
+
+El desempeño de este robot ha sido comparado con el desempeño de máquinas tradicionales de
+configuración serial de 3 y 5 ejes. El estudio mostró que para el mecanizado de materiales tradicionales
+con una dureza de 54HRc el robot paralelo presenta las mismas prestaciones que los robots seriales. La
+prestación es medida en función del acabado superficial que deja la máquina sobre la pieza así como
+también la geometría obtenida a partir de medir probetas de prueba. Los autores reportaron que para
+materiales con alta dureza 62 HRc el robot paralelo Variax mejora las prestaciones de los robots seriales
+.
+En esta misma línea de robots basados en la configuración Hexápodo se tiene el Okuma PM600
+cuya diferencia respecto a la configuración del Variax subyace en que las piernas del robot están
+conectadas en configuración hexagonal sin cruzarse. Entre los robot de configuración de 6 GdL cabe
+destacar también el Hexaglide mostrado en la Figura 9 conjuntamente con el robot Okuma.
+Adicionalmente se puede destacar el robot HexaM de Toyoda basado en la configuración de 6 ejes.
+
+\includegraphics[scale=1]{MECANISADO2.PNG} 
+
+Los robots anteriores entran en la categoría de robot paralelos completos o fully parallel robot,
+donde cada pierna es similar a la otra y además tiene un actuador o motor en cada pierna que
+generalmente es lineal. La ventaja de estos robots es que en cada pierna sus componentes trabajan a
+tradición o compresión por lo que no están sometidos a momento flector como los robots seriales. Esto
+le da la característica de mayor rigidez pudiendo maquinar piezas de mayor dureza. Sin embargo le
+restan capacidad de espacio de trabajo. Es por esto que ha surgido el diseño de robots híbridos
+paralelo/serie que tratan de tomar las ventajas tanto de un robot paralelo como de uno serial. En el
+campo de máquinas de mecanizado generalmente 3 de sus GdL viene dado por el robot paralelo y los
+GdL restantes son añadidos bien sea utilizando un robot en la base para dar 2 GdL o colocando un robot
+serial en la plataforma móvil. Para el primer caso donde se usa una plataforma para el movimiento plano
+de translación x-y, el robot paralelo cumple con la función de proporcionar a la herramienta 3 GdL,
+principalmente 2 rotaciones y un desplazamiento (en la dirección perpendicular a la base). La Figura 10
+muestra una representación esquemática de este tipo de robot.\\
+
+
+
+
+
+\section{APLICACIONES EN LA CIRUGÍA ROBÓTICA}
+
+La cirugía mínimamente invasiva representa una de las áreas donde la introducción de robot 
+produce un gran impacto, sobre todo mejorando las prestaciones de la cirugía laparoscópica, ya que
+aumenta la habilidad del cirujano a la hora de realizar una operación (mayor precisión, evita el
+movimiento errático del pulso de la mano). Con la cirugía robótica se han logrado avances como
+realizar una operación mediante orificios de 10 mm en el cuerpo del paciente. En la actualidad solo hay
+un robot comercial disponible que es el sistema Da Vinci. El sistema se ha comercializado a partir de los
+años 90 y en el año 2000 fue autorizado por la Administración de Alimentos y Medicamentos (FDA) de
+los Estados Unidos. El robot consiste de 3 o 4 brazos robóticos del tipo serial, una consola o monitor
+para interacción del médico con el robot y una camilla donde se ubica al paciente.
+El desarrollo de robot paralelo para aplicaciones de cirugía robótica no ha llegado al nivel
+comercial. Los desarrollos se tienen a nivel de laboratorios de universidades e institutos de investigación.
+En se diseña un robot paralelo del tipo esférico para aplicaciones de cirugía laparoscópica. El
+mecanismo se caracteriza por tener juntas de revoluta, los autores presentan el diseño óptimo del robot
+mediante algoritmos genéticos. Sin embargo este robot no ha evolucionado más allá de su diseño
+preliminar.
+En desarrollan un robot paralelo compacto para asistir en varios tipos de operaciones
+laparoscópicas, el robot presenta la característica de utilizar materiales de bajo costo en su manufactura.
+El robot ha sido evaluado de forma experimental en colecistectomía extraída de órganos porcinos. El
+robot presenta una configuración similar al de la plataforma Stewart?Gough donde los actuadores
+lineales son del tipo hidráulico. La Figura 13 presenta una imagen del robot. Es de destacar también el
+robot paralelo RAMiSS que presenta una arquitectura 6-RRCRR.\\
+
+
+\includegraphics[scale=1]{CIRUGUIA.PNG} 
+
+
+
+\section{APLICACIONES EN ROBÓTICA PARA REHABILITACIÓN}
+
+La rehabilitación robótica se presenta como otro de los campos de mayor interés en la actualidad,
+sirviendo de asistencia al trabajo arduo de los fisioterapeutas, además de que logra una mejor
+coordinación para los ejercicios de rehabilitación y mayor precisión en el diagnóstico de lesiones y la
+medición de la evolución de los pacientes. La rehabilitación y diagnosis de las extremidades inferiores
+es muy frecuente debido a la gran cantidad de accidentes a los que están expuestas estas extremidades,
+de hecho, en el campo de los deportes suelen presentarse muy a menudo.
+Los robots paralelos presentan su mayor aplicación en el desarrollo de robot para rehabilitación de
+tobillo. En la última década se han desarrollado importantes trabajos en el área de la robótica para la
+rehabilitación y entre los que se han desarrollado prototipos de dispositivos de rehabilitación para la
+articulación de tobillo. Actualmente, existen dispositivos comerciales Fisiotek 2000 y el Biodex 
+Balance System . También existen un buen número de desarrollos de dispositivos robóticos a nivel
+de laboratorio, en donde la mayoría de los prototipos desarrollados se basan en
+configuraciones de robots paralelos, donde el pie generalmente se coloca sobre la plataforma móvil
+.También se han propuesto robots paralelos tipo exoesqueleto donde la plataforma fija va unida a la
+pierna (tibia peroné) y la plataforma móvil al pie.
+Uno de los primeros dispositivos de rehabilitación para la articulación de tobillo propuestos fue el
+?Rutgers-Ankle?. Dicho robot presenta una configuración de robot paralelo tipo plataforma Stewart.
+El robot consiste de una plataforma móvil con posibilidad de cambiar su posición en el espacio así como
+también su orientación. El robot presenta 6 grados de libertad (6-GDL) que le permiten mover al tobillo
+dentro del rango de movimiento realizados por el fisiatra en los ejercicios de rehabilitación. En un
+posterior estudio se observa que no es necesario diseñar robots con 6 GDL para este tipo de
+rehabilitación. En dicho trabajo se propusieron configuraciones de robot paralelos de 3 GDL y 4 GDL.
+Seguidamente, en destacan que el rango de movimiento puede variar en función del paciente por lo
+que proponen un dispositivo reconfigurable con respecto al rango de movimientos de cada paciente.
+Recientemente, en han discutido aspectos funcionales de configuraciones robóticas considerando el
+modelo cinemático del tobillo. En el trabajo, emplean un modelo biomecánico del tobillo. Los autores
+proponen incluir la junta de tobillo, dos pares de revolución, como parte de la topología del robot
+paralelo. Por lo que el modelo de tobillo es incluido en el estudio cinemático del dispositivo propuesto.
+Los robots propuestos consideran la base fija colocada en el piso y la base móvil unida al pie.
+Recientemente, se han propuesto configuraciones de robot paralelos del tipo exosqueleto de 3 GDL
+y 4 GDL. En estos casos, la plataforma móvil va unida al pie mientras que la plataforma fija va
+unida a la extremidad inferior. Por último, a partir del estudio de las configuraciones singulares
+presentes en los robots paralelos, se han propuesto configuraciones de robot paralelos redundantes y
+se han estudiado aspectos relacionados con el control del robot.\\
+
+
+
+\section{APLICACIONES EN EL LABORATORIO UPV Y MECABOT-ULA}
+
+El Laboratorio de Mecatrónica y Robótica de la Universidad de los Andes (MECABOT-ULA),
+Venezuela, conjuntamente con grupos de investigación de la Universitàt Politècnica de Valencia han
+venido desarrollando metodologías para el diseño de sistemas biomecatrónicos para el diagnóstico y
+rehabilitación de extremidades del cuerpo humano. En particular, se han desarrollado y construido 
+dos prototipos robóticos para rehabilitación y diagnosis de la extremidad inferior. El primer robot fue
+enfocado para cubrir con tareas de rehabilitación del tobillo, el robot presenta una arquitectura donde la
+plataforma móvil va unida a la base mediante 3 piernas de configuración PRS. El desarrollo mecatrónico
+que incluye el modelo cinemático y dinámico del robot puede ser consultado en. La rehabilitación
+de tobillo requiere principalmente de dos GdL, el primero para la rotación de dorsi/plantar flexión y la
+segunda para abducción y aducción. El robot PRS presenta además un movimiento de traslación
+perpendicular al plano base, este GdL es usado ajustar la altura del paciente. Para aplicaciones de
+rehabilitación resulta muy importante el diseño del controlador. Para este dispositivo se desarrolló
+controladores tanto de fuerza como también con observadores para la velocidad del robot.\\
+
+\includegraphics[scale=1]{UPB ULTRA.PNG} 
+
+
+La arquitectura de control basada en programas middleware que pueden permitir aplicaciones de telerobótica. La Figura 14 presenta una imagen del robot donde es empleado para simular la
+rehabilitación de tobillo utilizando una pierna maniquí. 
+
+\end{document}
